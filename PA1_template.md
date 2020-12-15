@@ -37,6 +37,7 @@ Reading local data in working directory.
 
 
 ```r
+#local dir files, might be different acording to your working directory
 dirfile <- "F:/R codes/Projects/RepData_PeerAssessment1/activity.zip"
 unzip(dirfile,exdir="F:/R codes/Projects/RepData_PeerAssessment1")
 Activity.Data <- read.csv("activity.csv")

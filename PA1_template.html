@@ -443,7 +443,8 @@ summary {
 <h2>Loading and preprocessing the data</h2>
 <p><strong>1. Code for reading in the dataset and/or processing the data</strong></p>
 <p>Reading local data in working directory.</p>
-<pre class="r"><code>dirfile &lt;- &quot;F:/R codes/Projects/RepData_PeerAssessment1/activity.zip&quot;
+<pre class="r"><code>#local dir files, might be different acording to your working directory
+dirfile &lt;- &quot;F:/R codes/Projects/RepData_PeerAssessment1/activity.zip&quot;
 unzip(dirfile,exdir=&quot;F:/R codes/Projects/RepData_PeerAssessment1&quot;)
 Activity.Data &lt;- read.csv(&quot;activity.csv&quot;)
 Activity.Data$date &lt;- as.Date(Activity.Data$date, &quot;%Y-%m-%d&quot;)
